@@ -15,7 +15,9 @@ export default await tseslint.config(
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
-  { ignores: ["**/dev/*", "**/dist/*", "**/tests/*", "tsconfig.json"] },
+  {
+    ignores: ["**/dev/*", "**/dist/*", "**/tests/*", "tsconfig.json", "**.js"],
+  },
   {
     plugins: {
       prettier: eslintPluginPrettier,

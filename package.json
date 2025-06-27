@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "ts-node src/bot.ts",
+    "test": "jest",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/bot.ts",
     "build": "tsc",
     "lint": "npx eslint src",
@@ -27,16 +28,21 @@
   },
   "homepage": "https://github.com/tarasvolosheniuk/tgpoll-bot#readme",
   "dependencies": {
+    "@prisma/client": "^6.10.1",
     "dayjs": "^1.11.13",
     "dotenv": "^16.6.0",
     "node-telegram-bot-api": "^0.66.0",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "eslint": "^9.29.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.5.1",
+    "jest": "^30.0.3",
     "prettier": "^3.6.2",
+    "prisma": "^6.10.1",
+    "ts-jest": "^29.4.0",
     "typescript": "5.1.6",
     "typescript-eslint": "^8.35.0"
   }
